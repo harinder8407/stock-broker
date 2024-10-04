@@ -40,3 +40,16 @@ const tradeSchema = new Schema({
     required: true, // Type of trade: buy or sell
   },
 });
+
+```javascript
+const portfolioSchema = new Schema({
+  trades: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Trade',
+  }],
+});
+
+
+
+
+
