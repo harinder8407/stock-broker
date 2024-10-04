@@ -15,6 +15,8 @@
 ## Data Model Design
 
 ### Trade Schema
+The Trade schema represents an individual trade transaction involving stocks. Each trade contains essential details required for tracking and analyzing stock performance.
+
 
 ```javascript
 const tradeSchema = new Schema({
@@ -41,6 +43,8 @@ const tradeSchema = new Schema({
   },
 });
 
+### Portfolio Schema
+Array of ObjectIds (referencing the Trade model)
 ```javascript
 const portfolioSchema = new Schema({
   trades: [{
