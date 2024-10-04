@@ -45,7 +45,6 @@ const tradeSchema = new Schema({
 
 ### Portfolio Schema
 Array of ObjectIds (referencing the Trade model)
-```javascript
 const portfolioSchema = new Schema({
   trades: [{
     type: Schema.Types.ObjectId,
