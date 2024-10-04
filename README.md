@@ -1,3 +1,4 @@
+## Overview
 Endpoints
 GET /api/portfolio: Retrieve the entire portfolio.
 GET /api/holdings: Retrieve holdings with average buying price.
